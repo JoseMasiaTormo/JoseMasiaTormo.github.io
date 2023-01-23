@@ -53,6 +53,36 @@ footer {
     background: #000;
 }
 
+.main hr {
+    height: 2px;
+    background-color: black; 
+    border-color: black; 
+    border-radius: 25px;
+}
+
+aside hr {
+    height: 2px;
+    background-color: tomato; 
+    border-color: tomato; 
+    border-radius: 25px;
+}
+
+.main h4 {
+    line-height: 130%; 
+    font-weight: normal;
+}
+
+aside img {
+    height: 150px; 
+    width: 120px; 
+    margin-left: 35px;
+}
+
+aside ul {
+    line-height: 150%;
+    font-size: small; 
+    margin-left: 10px;
+}
 @media screen and (max-width: 800px) {
     .main {
         width: 100%;
