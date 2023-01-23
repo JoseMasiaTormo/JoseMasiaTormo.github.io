@@ -83,6 +83,7 @@ aside ul {
     font-size: small; 
     margin-left: 10px;
 }
+
 @media screen and (max-width: 800px) {
     .main {
         width: 100%;
