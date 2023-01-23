@@ -73,6 +73,10 @@ aside hr {
     font-weight: normal;
 }
 
+.main ul {
+    margin-left: 20px;
+}
+
 aside img {
     height: 150px; 
     width: 120px; 
