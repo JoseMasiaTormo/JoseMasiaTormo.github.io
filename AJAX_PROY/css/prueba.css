@@ -1,0 +1,115 @@
+.sidebar {
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: lightgray;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar div {
+    padding: 8px 8px 8px 30px;
+    font-size: 15px;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-right .5s;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#checkbox {
+    display: none;
+    order: 1;
+  }
+  
+  .toggle {
+    order: 2;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #212A3B;
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+
+@media screen and (max-width: 570px) {
+    .toggle {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sombra {
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding-top: 40px;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0s;
+        opacity: 50%;
+    }
+}
